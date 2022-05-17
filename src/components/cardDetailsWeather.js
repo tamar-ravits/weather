@@ -64,6 +64,7 @@ export default function CardDetailsWeather({ city }) {
 
                     </div>
                 </div>
-            </div></div>
+            </div>
+        </div>
     );
 }
