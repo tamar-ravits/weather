@@ -28,7 +28,7 @@ export default function Home() {
     }
 
     useEffect(() => {
-        // getWeatherByCityName();
+        getWeatherByCityName();
     }, [])
 
     return (
