@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import '../App.css'
-import CardDetailsWeather from './cardDteisWeather';
+import CardDetailsWeather from './cardDetailsWeather';
 
 export default function Home() {
     const apiKey = '7ae8ccfbb3c794652c1916af0004862d';
     const lang = 'he';
-    const [cities, setCities] = useState(['London', 'New york', 'Alaska', 'Eilat', 'Pariz', 'Madrid', 'Milano'])
+    const [cities, setCities] = useState(['London', 'New york', 'Alaska', 'Eilat'])
 
     const mapDetailsWeather = (detailsWeather) => {
         const citiesWeather = detailsWeather && detailsWeather.map((city) => (
@@ -31,17 +31,13 @@ export default function Home() {
         getWeatherByCityName();
     }, [])
 
-
-
     return (
         <>
-            {/* <div className='wrap-list'> */}
                 {cities.map((city) => {
                     return (
                         <CardDetailsWeather city={city} />
                     )
                 })}
-            {/* </div> */}
         </>
     );
 }
