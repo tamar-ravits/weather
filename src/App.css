@@ -5,13 +5,12 @@
 .row-content {
   overflow: hidden;
   background-attachment: fixed !important;
-  background-image: url('white-cloud-blue-sky.jpg');
+  background-image: url(./white-cloud-blue-sky.jpg);
   height: 92vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   overflow-y: auto;
-
 }
 
 .wrap-card {
