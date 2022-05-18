@@ -22,7 +22,7 @@ export default function Home() {
 
     const getWeatherByCityName = async () => {
         const promises = await Promise.all(cities.map(city =>
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=${lang}&appid=${apiKey}`)));
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=${lang}&appid=${apiKey}`)));
         const citiesDetails = await Promise.all(promises.map(p => p.json()));
         mapDetailsWeather(citiesDetails);
     }
